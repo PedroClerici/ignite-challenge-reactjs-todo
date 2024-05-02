@@ -16,11 +16,13 @@
   --purple-600: #5e60ce;
 
   --red-500: #e25858;
+
+  --border-radius: 8px;
 }
 
 :focus {
   outline: transparent;
-  box-shadow: 0 0 0 1px var(--purple-600);
+  box-shadow: 0 0 0 2px var(--purple-600);
 }
 
 * {
@@ -30,6 +32,7 @@
 }
 
 body {
+  position: relative;
   background: var(--gray-600);
   color: var(--gray-100);
   line-height: 1.4;
@@ -39,6 +42,7 @@ body,
 input,
 textarea,
 button {
+  border: none;
   font-weight: 400;
   font-size: 1rem;
   font-family: "Inter", sans-serif;
