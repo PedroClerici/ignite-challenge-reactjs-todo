@@ -13,6 +13,43 @@
   width: 100%;
 }
 
+.tasksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.tasksInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.tasksInfo div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.tasksInfo span {
+  border-radius: 16px;
+  background: var(--gray-400);
+  padding: 0.125rem 0.5rem;
+  color: var(--gray-200);
+  font-weight: bold;
+}
+
+.tasksInfo div:nth-child(even) {
+  color: var(--purple-400);
+}
+
+.tasksInfo div:nth-child(odd) {
+  color: var(--blue-400);
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 87.5%;

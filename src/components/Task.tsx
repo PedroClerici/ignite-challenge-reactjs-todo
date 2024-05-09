@@ -6,22 +6,32 @@ import { Unchecked } from "./icons/Unchecked";
 import styles from "./Task.module.css";
 
 interface TaskProps {
+  id: number;
   isDone: boolean;
   content: string;
-  onDeleteTask: (taskContent: string) => void;
+  onDeleteTask: (taskId: number) => void;
+  onTaskStateChange: (taskId: number, taskState: boolean) => void;
 }
 
-export function Task({ content, isDone = false, onDeleteTask }: TaskProps) {
+export function Task({
+  id,
+  content,
+  isDone = false,
+  onDeleteTask,
+  onTaskStateChange,
+}: TaskProps) {
   const [isTaskFinished, setIsTaskFinished] = useState(isDone);
 
   function handleToggleTaskState() {
+    onTaskStateChange(id, !isTaskFinished);
+
     setIsTaskFinished((state) => {
       return !state;
     });
   }
 
   function handleDeleteTask() {
-    onDeleteTask(content);
+    onDeleteTask(id);
   }
 
   return (

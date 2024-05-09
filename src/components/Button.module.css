@@ -10,6 +10,11 @@
   font-size: 0.875;
 }
 
-.button:hover {
+.button:not(:disabled):hover {
   background: var(--blue-400);
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
