@@ -1,30 +1,40 @@
-# React + TypeScript + Vite
+# Ignite Todo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Stay organized and conquer your day with this efficient to-do list app!
 
-Currently, two official plugins are available:
+![To-Do App](./screenshots/preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Purpose
 
-## Expanding the ESLint configuration
+This project is a challenge from the [React Rocketseat Course](https://www.rocketseat.com.br/formacao/react).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- Persistent storage (local storage)
+- Mobile and desktop responsive.
+- Finished tasks counter.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Getting Started
+
+You can use it [here](https://pedroclerici.github.io/ignite-challenge-reactjs-todo).
+Or you can clone it to your machine.
+
+```bash
+git clone https://github.com/PedroClerici/ignite-challenge-reactjs-todo.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Install dependencies with `npm`.
+
+```bash
+npm install
+```
+
+Run a development preview.
+
+```bash
+npm run dev
+```
+
+## Credits
+
+Thanks to [Millena Martins](https://www.linkedin.com/in/millenakmartins/) for the [Design](https://www.figma.com/file/0n0zDN7zbzhRbaEO74Xesx/ToDo-List-%E2%80%A2-Desafio-React).
