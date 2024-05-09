@@ -1,0 +1,13 @@
+.checked path {
+  fill: var(--purple-600);
+  transition: fill 0.1s;
+}
+
+.checked path:last-child,
+.checked:hover path:last-child {
+  fill: var(--gray-100);
+}
+
+.checked:hover path {
+  fill: var(--purple-400);
+}
